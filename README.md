@@ -8,6 +8,12 @@
 
 ConvX is an iOS app developed in SwiftUI that provides precise conversions between different units of measurement. The project demonstrates modern iOS development practices using **MVVM (Model-View-ViewModel)** pattern combined with **Clean Architecture** principles, showcasing separation of concerns, dependency injection, and testable code structure.
 
+## 📱 Screenshots
+
+![ConvX App Interface](screenshots/convx-app-screenshot.png)
+
+*Modern and intuitive interface with color-coded conversion types, smooth animations, and real-time conversion results.*
+
 ## 🚀 Features
 
 ### Supported Conversion Types
