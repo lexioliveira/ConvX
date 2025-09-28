@@ -262,8 +262,7 @@ This project is developed for educational purposes and demonstration of modern i
 
 **Lexi Oliveira**
 - Project created on 27/09/2025
-- First contact with SwiftUI and Clean Architecture
-- Learning modern iOS development patterns
+- First contact with SwiftUI
 
 ---
 
