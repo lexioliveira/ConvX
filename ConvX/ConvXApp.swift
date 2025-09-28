@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// This app is just the introduction of myself to SwfitUI.
+
 @main
 struct ConvXApp: App {
     var body: some Scene {
