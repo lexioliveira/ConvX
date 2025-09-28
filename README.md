@@ -1,31 +1,31 @@
-# ConvX - Conversor de Unidades
+# ConvX - Unit Converter
 
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
 ![iOS](https://img.shields.io/badge/iOS-14.0+-blue.svg)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-4.0+-green.svg)
 
-ConvX é um aplicativo iOS desenvolvido em SwiftUI que oferece conversões precisas entre diferentes unidades de medida. O projeto demonstra conceitos fundamentais de SwiftUI, incluindo protocolos, enums, state management e interface declarativa.
+ConvX is an iOS app developed in SwiftUI that provides precise conversions between different units of measurement. The project demonstrates fundamental SwiftUI concepts, including protocols, enums, state management, and declarative interface.
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-### Tipos de Conversão Suportados
+### Supported Conversion Types
 
-- **🌡️ Temperatura**: Celsius (°C), Fahrenheit (°F), Kelvin (K)
-- **📏 Comprimento**: Metros (m), Quilômetros (km), Pés (ft), Jardas (yd), Milhas (mi)
-- **⏰ Tempo**: Segundos (s), Minutos (min), Horas (h), Dias (d)
-- **📦 Volume**: Mililitros (mL), Litros (L), Copos (cup), Pintas (pt), Galões (gal)
+- **🌡️ Temperature**: Celsius (°C), Fahrenheit (°F), Kelvin (K)
+- **📏 Length**: Meters (m), Kilometers (km), Feet (ft), Yards (yd), Miles (mi)
+- **⏰ Time**: Seconds (s), Minutes (min), Hours (h), Days (d)
+- **📦 Volume**: Milliliters (mL), Liters (L), Cups (cup), Pints (pt), Gallons (gal)
 
-### Características da Interface
+### Interface Features
 
-- **Interface Intuitiva**: Design limpo e moderno usando SwiftUI
-- **Conversão em Tempo Real**: Resultados atualizados instantaneamente
-- **Seleção Inteligente**: Prevenção de seleção de unidades idênticas
-- **Teclado Numérico**: Otimizado para entrada de valores decimais
-- **Navegação Fluida**: Transições suaves entre diferentes tipos de conversão
+- **Intuitive Interface**: Clean and modern design using SwiftUI
+- **Real-time Conversion**: Results updated instantly
+- **Smart Selection**: Prevention of identical unit selection
+- **Numeric Keyboard**: Optimized for decimal value input
+- **Smooth Navigation**: Fluid transitions between different conversion types
 
-## 🏗️ Arquitetura do Projeto
+## 🏗️ Project Architecture
 
-### Protocolos e Enums
+### Protocols and Enums
 
 ```swift
 protocol ConvertionOption: CaseIterable {
@@ -33,115 +33,106 @@ protocol ConvertionOption: CaseIterable {
 }
 ```
 
-O projeto utiliza um protocolo `ConvertionOption` que garante consistência entre diferentes tipos de conversão, permitindo:
+The project uses a `ConvertionOption` protocol that ensures consistency between different conversion types, allowing:
 
-- **Extensibilidade**: Fácil adição de novos tipos de conversão
-- **Consistência**: Interface uniforme para todas as unidades
-- **Type Safety**: Compilação segura com enums tipados
+- **Extensibility**: Easy addition of new conversion types
+- **Consistency**: Uniform interface for all units
+- **Type Safety**: Safe compilation with typed enums
 
-### Estrutura de Conversão
+### Conversion Structure
 
-Cada tipo de conversão segue um padrão consistente:
-1. **Conversão para Unidade Base**: Todas as unidades são convertidas para uma unidade padrão
-2. **Conversão para Destino**: A unidade base é convertida para a unidade de destino
-3. **Precisão**: Resultados formatados com 2 casas decimais
+Each conversion type follows a consistent pattern:
+1. **Base Unit Conversion**: All units are converted to a standard unit
+2. **Destination Conversion**: The base unit is converted to the destination unit
+3. **Precision**: Results formatted with 2 decimal places
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
-- **SwiftUI**: Framework declarativo para interface do usuário
-- **Swift 5.0+**: Linguagem de programação moderna e segura
-- **iOS 14.0+**: Plataforma de destino
-- **Xcode**: Ambiente de desenvolvimento integrado
+- **SwiftUI**: Declarative framework for user interface
+- **Swift 5.0+**: Modern and safe programming language
+- **iOS 14.0+**: Target platform
+- **Xcode**: Integrated development environment
 
-## 📱 Como Executar
+## 📱 How to Run
 
-### Pré-requisitos
+### Prerequisites
 
-- macOS com Xcode 14.0 ou superior
-- iOS Simulator ou dispositivo iOS 14.0+
+- macOS with Xcode 14.0 or higher
+- iOS Simulator or iOS device 14.0+
 
-### Instalação
+### Installation
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone [URL_DO_REPOSITORIO]
+git clone [REPOSITORY_URL]
 cd ConvX
 ```
 
-2. Abra o projeto no Xcode:
+2. Open the project in Xcode:
 ```bash
 open ConvX.xcodeproj
 ```
 
-3. Selecione um simulador ou dispositivo de destino
-4. Pressione `Cmd + R` para executar o aplicativo
+3. Select a simulator or target device
+4. Press `Cmd + R` to run the application
 
-## 🎯 Conceitos Demonstrados
+## 🎯 Demonstrated Concepts
 
-### SwiftUI Avançado
+### Advanced SwiftUI
 
-- **State Management**: Uso de `@State` para gerenciamento de estado local
-- **Binding**: Conexão bidirecional entre interface e dados
-- **Modifiers**: Aplicação de estilos e comportamentos
-- **Navigation**: Implementação de navegação com `NavigationStack`
+- **State Management**: Use of `@State` for local state management
+- **Binding**: Bidirectional connection between interface and data
+- **Modifiers**: Application of styles and behaviors
+- **Navigation**: Navigation implementation with `NavigationStack`
 
-### Padrões de Design
+### Design Patterns
 
-- **Protocol-Oriented Programming**: Uso de protocolos para flexibilidade
-- **Enum-Driven UI**: Interface baseada em enums tipados
-- **Separation of Concerns**: Lógica de conversão separada da interface
+- **Protocol-Oriented Programming**: Use of protocols for flexibility
+- **Enum-Driven UI**: Interface based on typed enums
+- **Separation of Concerns**: Conversion logic separated from interface
 
-### Boas Práticas
+### Best Practices
 
-- **Type Safety**: Uso de enums para prevenir erros
-- **Code Organization**: Funções agrupadas por funcionalidade
-- **Error Handling**: Tratamento de valores inválidos
-- **Performance**: Cálculos otimizados e interface responsiva
+- **Type Safety**: Use of enums to prevent errors
+- **Code Organization**: Functions grouped by functionality
+- **Error Handling**: Treatment of invalid values
+- **Performance**: Optimized calculations and responsive interface
 
-## 🔧 Estrutura do Código
+## 🔧 Code Structure
 
 ```
 ConvX/
-├── ConvXApp.swift          # Ponto de entrada da aplicação
-├── ContentView.swift       # Interface principal e lógica de conversão
-└── Assets.xcassets/        # Recursos visuais
+├── ConvXApp.swift          # Application entry point
+├── ContentView.swift       # Main interface and conversion logic
+└── Assets.xcassets/        # Visual resources
 ```
 
-### Principais Componentes
+### Main Components
 
-- **ConversionType**: Enum principal que define tipos de conversão
-- **TemperatureOptions, LengthOptions, etc.**: Enums específicos para cada tipo
-- **ContentView**: View principal com toda a lógica de interface e conversão
-- **Funções de Conversão**: Métodos especializados para cada tipo de conversão
+- **ConversionType**: Main enum that defines conversion types
+- **TemperatureOptions, LengthOptions, etc.**: Specific enums for each type
+- **ContentView**: Main view with all interface and conversion logic
+- **Conversion Functions**: Specialized methods for each conversion type
 
-## 🎨 Interface do Usuário
+## 🎨 User Interface
 
-O aplicativo apresenta uma interface limpa e intuitiva com:
+The app presents a clean and intuitive interface with:
 
-- **Form Sections**: Organização clara das opções
-- **Segmented Pickers**: Seleção fácil de unidades
-- **Real-time Updates**: Resultados instantâneos
-- **Keyboard Optimization**: Teclado numérico para entrada eficiente
+- **Form Sections**: Clear organization of options
+- **Segmented Pickers**: Easy unit selection
+- **Real-time Updates**: Instant results
+- **Keyboard Optimization**: Numeric keyboard for efficient input
 
-## 🚀 Próximos Passos
+## 📄 License
 
-- [ ] Adicionar mais tipos de conversão (peso, área, velocidade)
-- [ ] Implementar histórico de conversões
-- [ ] Adicionar favoritos para conversões frequentes
-- [ ] Suporte a temas (claro/escuro)
-- [ ] Internacionalização (i18n)
-- [ ] Testes unitários para funções de conversão
+This project is developed for educational purposes and demonstration of SwiftUI concepts.
 
-## 📄 Licença
-
-Este projeto é desenvolvido para fins educacionais e demonstração de conceitos SwiftUI.
-
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Lexi Oliveira**
-- Projeto criado em 27/09/2025
-- Primeiro contato com SwiftUI
+- Project created on 27/09/2025
+- First contact with SwiftUI
 
 ---
 
-*ConvX representa uma introdução prática ao desenvolvimento iOS moderno com SwiftUI, demonstrando como criar aplicações elegantes e funcionais usando as melhores práticas da plataforma.*
+*ConvX represents a practical introduction to modern iOS development with SwiftUI, demonstrating how to create elegant and functional applications using the platform's best practices.*
